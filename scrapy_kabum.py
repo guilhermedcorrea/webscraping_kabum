@@ -4,9 +4,7 @@ from bs4 import BeautifulSoup
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
-
 
 class KabumSpider:
     
@@ -15,7 +13,6 @@ class KabumSpider:
     'https://www.kabum.com.br/hardware/processadores',
   
         ]
-    
     
     def get_user_agent_list(self):
         response = requests.get('http://headers.scrapeops.io/v1/user-agents?api_key=' + self.SCRAPEOPS_API_KEY)
